@@ -1,18 +1,23 @@
+import classNames from 'classnames/bind';
+import styles from './DefaultLayout.module.scss';
+
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Brand from '../components/Brand';
 
-const DefaultLayout = ({ children }) => {
+const cx = classNames.bind(styles);
+
+const HeaderFooterOnly = ({ children }) => {
     return (
-        <div>
+        <div className={cx('wrapper')}>
             <Header />
-            <div className="container">
-                <Brand />
-                <div className="content">{children}</div>
+            <Brand />
+            <div className={cx('container')}>
+                <div className={cx('content')}>{children}</div>
             </div>
             <Footer />
         </div>
     );
 };
 
-export default DefaultLayout;
+export default HeaderFooterOnly;
