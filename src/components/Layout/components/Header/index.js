@@ -14,6 +14,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import MenuBar from '../MenuItem';
+
 const cx = classNames.bind(styles);
 
 const infoItems = [
@@ -110,7 +112,7 @@ const Header = () => {
                 </div>
             </div>
 
-            <div className={cx('menu-bar')}>Menu nha</div>
+            <MenuBar />
         </header>
     );
 };
