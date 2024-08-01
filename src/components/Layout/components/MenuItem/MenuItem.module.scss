@@ -5,7 +5,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #ffffff;
+    background-color: var(--white);
 }
 
 .menu-bar {
@@ -36,7 +36,7 @@
                 width: 1px;
                 height: 50%;
                 // background-color: #f1f1f1;
-                background-color: #1a1a1a;
+                background-color: var(--black);
                 transform: translateY(-50%);
             }
 

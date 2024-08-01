@@ -19,7 +19,7 @@
             width: 875px;
             width: 60px;
             height: 2px;
-            border-top: 1px solid #1a1a1a;
+            border-top: 1px solid var(--black);
         }
     }
 
@@ -75,7 +75,7 @@
                 }
 
                 .season-info {
-                    background-color: #ffffff;
+                    background-color: var(--white);
                     display: flex;
                     justify-content: space-between;
                     padding: 21px 60px;

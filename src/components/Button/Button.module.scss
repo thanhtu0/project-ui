@@ -6,7 +6,7 @@
     padding: 10px 32px;
     font-size: 1.5rem;
     cursor: pointer;
-    background-color: #1a1a1a;
+    background-color: var(--black);
     user-select: none;
 
     + .wrapper {
@@ -26,6 +26,6 @@
 }
 
 .primary {
-    color: #ffffff;
-    background-color: #1a1a1a;
+    color: var(--white);
+    background-color: var(--black);
 }

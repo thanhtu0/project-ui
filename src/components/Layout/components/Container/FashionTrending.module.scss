@@ -8,6 +8,7 @@
         width: 350px;
         font-size: 4rem;
         font-weight: 600;
+        color: var(--black);
         position: relative;
 
         &::after {
@@ -18,7 +19,7 @@
             transform: translateY(-10%);
             width: 60px;
             height: 2px;
-            border-top: 1px solid #1a1a1a;
+            border-top: 1px solid var(--black);
         }
     }
 

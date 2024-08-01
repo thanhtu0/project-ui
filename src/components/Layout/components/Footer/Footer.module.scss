@@ -1,7 +1,7 @@
 .footer {
     width: var(--default-layout-width);
     height: 523px;
-    background-color: #1a1a1a;
+    background-color: var(--black);
     padding: 80px 130px;
 }
 
@@ -12,7 +12,7 @@
 }
 
 .footer-logo {
-    color: #ffffff;
+    color: var(--white);
     line-height: 50px;
     width: 120px;
     height: 50px;
@@ -25,9 +25,9 @@
 
     h3 {
         display: inline-block;
-        border-bottom: 1px solid #ffffff;
+        border-bottom: 1px solid var(--white);
         font-size: 1.6rem;
-        color: #ffffff;
+        color: var(--white);
         padding-bottom: 12px;
         margin-bottom: 24px;
     }
@@ -43,7 +43,7 @@
             font-weight: 400;
 
             a {
-                color: #ffffff;
+                color: var(--white);
                 text-decoration: none;
 
                 &:hover {
@@ -55,7 +55,7 @@
 
     p {
         font-size: 1.4rem;
-        color: #ffffff;
+        color: var(--white);
         margin-bottom: 12px;
         width: 200px;
     }
@@ -70,14 +70,14 @@
         font-size: 1.2rem;
         font-weight: 300;
         line-height: 55px;
-        color: #ffffff;
+        color: var(--white);
     }
 }
 
 .payment-methods {
     li {
         display: block;
-        color: #ffffff;
+        color: var(--white);
         font-size: 14px;
         font-weight: 400;
         line-height: 18px;
