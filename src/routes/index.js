@@ -7,9 +7,10 @@ import ProductDetail from '~/pages/ProductDetail';
 
 // Public routes
 const publicRoutes = [
+    { path: '/', component: MenHome },
     { path: '/men', component: MenHome },
     { path: '/women', component: WomenHome },
-    { path: '/product detail', component: ProductDetail, layout: HeaderFooterOnly },
+    { path: '/product-detail', component: ProductDetail, layout: HeaderFooterOnly },
 ];
 // Private routes
 const privateRoutes = [];
