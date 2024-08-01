@@ -6,10 +6,12 @@
 
 .container {
     width: var(--default-layout-width);
-    min-height: 5591px;
+    min-height: 3650px;
+    background-color: grey;
 }
 
 .content {
     flex: 1;
-    min-height: 5355px;
+    background-color: brown;
+    min-height: 100px;
 }
