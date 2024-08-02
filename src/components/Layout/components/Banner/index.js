@@ -11,8 +11,8 @@ const Banner = () => {
         <div className={cx('hero')}>
             <div className={cx('hero-content')}>
                 <div className={cx('season-label')}>New Season</div>
-                <h1 className={cx('hero-title')}>Route One O.B.</h1>
-                <h2 className={cx('hero-subtitle')}>Lastest Skateboard</h2>
+                <h1 className={cx('title')}>Route One O.B.</h1>
+                <h2 className={cx('sub-title')}>Lastest Skateboard</h2>
                 <div className={cx('hero-btn')}>
                     <Button primary>Discover</Button>
                     <Button rounded>

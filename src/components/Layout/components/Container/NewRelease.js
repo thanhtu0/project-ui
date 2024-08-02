@@ -12,6 +12,7 @@ const initialProducts = [
         id: 1,
         liked: false,
         name: 'Globe Sabre Skate Shoes - Black...',
+        title: 'Globe Sabre Skate Shoes - Black...',
         price: '£84.99',
         sold: '1114 sold',
         image: 'assets/images/men/container/new_releases/product_1.png',
@@ -20,6 +21,7 @@ const initialProducts = [
         id: 2,
         liked: false,
         name: 'Birdhouse Armanto Favorites...',
+        title: 'Birdhouse Armanto Favorites...',
         price: '£79.95',
         sold: '123 sold',
         image: 'assets/images/men/container/new_releases/product_2.png',
@@ -28,6 +30,7 @@ const initialProducts = [
         id: 3,
         liked: true,
         name: 'Thrasher Flame Logo Snapback',
+        title: 'Thrasher Flame Logo Snapback',
         price: '£64.99',
         sold: '1233 sold',
         image: 'assets/images/men/container/new_releases/product_3.png',
@@ -36,6 +39,7 @@ const initialProducts = [
         id: 4,
         liked: false,
         name: 'Pull On Chino Short - Coconut...',
+        title: 'Pull On Chino Short - Coconut...',
         price: '£47.99',
         sold: '1214 sold',
         image: 'assets/images/men/container/new_releases/product_4.png',
@@ -44,6 +48,7 @@ const initialProducts = [
         id: 5,
         liked: false,
         name: 'Stage 3 Complete Skateboard',
+        title: 'Stage 3 Complete Skateboard',
         price: '£59.99',
         sold: '764 sold',
         image: 'assets/images/men/container/new_releases/product_5.png',
@@ -52,6 +57,7 @@ const initialProducts = [
         id: 6,
         liked: false,
         name: 'Herschel Supply Co. Settlement...',
+        title: 'Herschel Supply Co. Settlement...',
         price: '£59.99',
         sold: '1573 sold',
         image: 'assets/images/men/container/new_releases/product_6.png',
@@ -60,6 +66,7 @@ const initialProducts = [
         id: 7,
         liked: false,
         name: 'REKD Elite 2.0 Helmet - Blue',
+        title: 'REKD Elite 2.0 Helmet - Blue',
         price: '£34.95',
         sold: '364 sold',
         image: 'assets/images/men/container/new_releases/product_7.png',
@@ -68,6 +75,7 @@ const initialProducts = [
         id: 8,
         liked: false,
         name: 'Element Cookie Skateboard...',
+        title: 'Element Cookie Skateboard...',
         price: '£64.99',
         sold: '245 sold',
         image: 'assets/images/men/container/new_releases/product_8.png',
@@ -81,7 +89,7 @@ const Product = memo(({ product, onLikeToggle }) => (
         </div>
         <img src={product.image} alt={product.name} className={cx('product-image')} />
         <div className={cx('product-info')}>
-            <Link to={`/product-detail/${product.id}`} className={cx('product-name')}>
+            <Link to={`/product-detail/${product.id}`} className={cx('product-name')} title={product.title}>
                 {product.name}
             </Link>
             <div className={cx('product-sale')}>
