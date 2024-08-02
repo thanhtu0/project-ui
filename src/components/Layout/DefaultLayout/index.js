@@ -9,13 +9,13 @@ import Banner from '../components/Banner';
 
 const cx = classNames.bind(styles);
 
-const HeaderFooterOnly = ({ children }) => {
+const DefaultLayout = ({ children, activeTab, setActiveTab }) => {
     return (
         <div className={cx('wrapper')}>
-            <Header />
+            <Header setActiveTab={setActiveTab} />
             <div className={cx('container')}>
                 <div className={cx('content')}>
-                    <Banner />
+                    <Banner activeTab={activeTab} />
                     <Brand />
                     {children}
                 </div>
@@ -26,4 +26,4 @@ const HeaderFooterOnly = ({ children }) => {
     );
 };
 
-export default HeaderFooterOnly;
+export default DefaultLayout;

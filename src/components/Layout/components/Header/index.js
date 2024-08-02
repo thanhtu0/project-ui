@@ -31,17 +31,19 @@ const infoItems = [
     },
 ];
 
-const Header = () => {
+const Header = ({ setActiveTab }) => {
     const location = useLocation();
-    const [activeTab, setActiveTab] = useState('Men');
+    const [activeTabState, setActiveTabState] = useState('Men');
 
     useEffect(() => {
         if (location.pathname === '/men') {
+            setActiveTabState('Men');
             setActiveTab('Men');
         } else if (location.pathname === '/women') {
+            setActiveTabState('Women');
             setActiveTab('Women');
         }
-    }, [location.pathname]);
+    }, [location.pathname, setActiveTab]);
 
     return (
         <header className={cx('wrapper')}>
@@ -68,10 +70,13 @@ const Header = () => {
 
                 <nav className={cx('nav')}>
                     <ul>
-                        <li className={cx({ active: activeTab === 'Men' })} onClick={() => setActiveTab('Men')}>
+                        <li className={cx({ active: activeTabState === 'Men' })} onClick={() => setActiveTab('Men')}>
                             <Link to="/men">Men</Link>
                         </li>
-                        <li className={cx({ active: activeTab === 'Women' })} onClick={() => setActiveTab('Women')}>
+                        <li
+                            className={cx({ active: activeTabState === 'Women' })}
+                            onClick={() => setActiveTab('Women')}
+                        >
                             <Link to="/women">Women</Link>
                         </li>
                     </ul>

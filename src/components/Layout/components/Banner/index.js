@@ -1,18 +1,24 @@
 import classNames from 'classnames/bind';
 import styles from './Banner.module.scss';
-
-import Button from '~/components/Button';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCirclePlay } from '@fortawesome/free-regular-svg-icons';
+
+import Button from '~/components/Button';
+
 const cx = classNames.bind(styles);
 
-const Banner = () => {
+const Banner = ({ activeTab }) => {
     return (
-        <div className={cx('hero')}>
-            <div className={cx('hero-content')}>
-                <div className={cx('season-label')}>New Season</div>
-                <h1 className={cx('title')}>Route One O.B.</h1>
-                <h2 className={cx('sub-title')}>Lastest Skateboard</h2>
+        <div className={cx('hero', { 'men-banner': activeTab === 'Men', 'women-banner': activeTab === 'Women' })}>
+            <div
+                className={cx('hero-content', {
+                    'men-content': activeTab === 'Men',
+                    'women-content': activeTab === 'Women',
+                })}
+            >
+                <div className={cx('season-label')}>{activeTab === 'Men' ? 'New Season' : 'New Collection'}</div>
+                <h1 className={cx('title')}>{activeTab === 'Men' ? 'Route One O.B.' : 'Elegance Redefined'}</h1>
+                <h2 className={cx('sub-title')}>{activeTab === 'Men' ? 'Lastest Skateboard' : 'Latest Fashion'}</h2>
                 <div className={cx('hero-btn')}>
                     <Button primary>Discover</Button>
                     <Button rounded>
@@ -29,14 +35,16 @@ const Banner = () => {
                 </div>
             </div>
 
-            <div className={cx('hero-image')}>
+            <div
+                className={cx('hero-image', { 'men-image': activeTab === 'Men', 'women-image': activeTab === 'Women' })}
+            >
                 <img
-                    src="/assets/images/men/banner/banner_1.png"
+                    src={activeTab === 'Men' ? '/assets/images/banner/men.png' : '/assets/images/banner/women.png'}
                     alt="Skateboarder"
                     className={cx('skateboarder-img')}
                 />
                 <strong>
-                    cordes.<p>Skateboard</p>
+                    cordes.<p>{activeTab === 'Men' ? 'Skateboard' : 'Fashion'}</p>
                 </strong>
             </div>
         </div>

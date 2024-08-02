@@ -1,9 +1,10 @@
-import { Fragment } from 'react';
+import { useState, Fragment } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { publicRoutes } from '~/routes';
 import { DefaultLayout } from '~/components/Layout';
 
 function App() {
+    const [activeTab, setActiveTab] = useState('Men');
     return (
         <Router>
             <div className="App">
@@ -24,7 +25,7 @@ function App() {
                                 key={index}
                                 path={route.path}
                                 element={
-                                    <Layout>
+                                    <Layout activeTab={activeTab} setActiveTab={setActiveTab}>
                                         <Page />
                                     </Layout>
                                 }

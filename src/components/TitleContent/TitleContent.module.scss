@@ -1,0 +1,18 @@
+.title-content {
+    height: 50px;
+    line-height: 50px;
+    font-size: 4rem;
+    font-weight: 600;
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        margin-left: 16px;
+        top: 84%;
+        transform: translateY(-16%);
+        width: 60px;
+        height: 2px;
+        border-top: 2px solid var(--black);
+    }
+}

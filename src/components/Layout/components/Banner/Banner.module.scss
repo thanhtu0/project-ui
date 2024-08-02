@@ -6,100 +6,133 @@
     justify-content: space-between;
     align-items: center;
     padding: 0 130px;
-    background-color: #e5effb;
 
-    .hero-content {
-        width: 660px;
-        height: 426px;
-        margin-top: 34px;
+    &.men-banner {
+        background-color: #e5effb;
+    }
 
-        .season-label {
-            font-size: 1.4rem;
-            position: relative;
+    &.women-banner {
+        background-color: #d2d9f2;
+    }
+}
 
-            &::after {
-                content: '';
-                position: absolute;
-                left: 90px;
-                top: 80%;
-                transform: translateY(-20%);
-                width: 40px;
-                height: 0;
-                border-top: 1px solid black;
+.hero-content {
+    width: 660px;
+    height: 426px;
+    margin-top: 34px;
+
+    .season-label {
+        font-size: 1.4rem;
+        position: relative;
+
+        &::after {
+            content: '';
+            position: absolute;
+            margin-left: 8px;
+            top: 80%;
+            transform: translateY(-20%);
+            width: 40px;
+            height: 0;
+            border-top: 1px solid var(--black);
+        }
+    }
+
+    .title,
+    .sub-title {
+        margin-top: 16px;
+        font-size: 5.8rem;
+        line-height: 72.5px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .sub-title {
+        margin-left: 100px;
+        width: 583px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .hero-btn {
+        margin-top: 88px;
+        display: flex;
+        gap: 40px;
+    }
+
+    .hero-slide {
+        margin-top: 105px;
+        display: flex;
+        gap: 8px;
+
+        .slide-line {
+            width: 40px;
+            height: 2px;
+            cursor: pointer;
+
+            &.first-line {
+                background-color: var(--white);
             }
-        }
 
-        .title,
-        .sub-title {
-            margin-top: 16px;
-            font-size: 5.8rem;
-            line-height: 72.5px;
-            width: 451px;
-        }
-
-        .sub-title {
-            margin-left: 100px;
-            width: 583px;
-            position: relative;
-            z-index: 1;
-        }
-
-        .hero-btn {
-            margin-top: 88px;
-            display: flex;
-            flex-direction: row;
-            gap: 40px;
-        }
-
-        .hero-slide {
-            margin-top: 105px;
-            display: flex;
-            flex-direction: row;
-            gap: 8px;
-
-            .slide-line {
-                width: 40px;
-                height: 2px;
-                cursor: pointer;
-
-                &.first-line {
-                    background-color: var(--white);
-                }
-
-                &.second-line,
-                &.third-line {
-                    background-color: #b3c4d7;
-                }
+            &.second-line,
+            &.third-line {
+                background-color: #b3c4d7;
             }
         }
     }
 
-    .hero-image {
-        width: 680px;
-        height: 460px;
-        background-color: #d4f5ff;
-        position: absolute;
-        right: 130px;
-
-        .skateboarder-img {
-            position: absolute;
-            object-fit: cover;
-            right: -1px;
-            top: 50%;
-            transform: translateY(-50%);
+    &.men-content {
+        .sub-title {
+            width: 650px;
         }
+    }
+
+    &.women-content {
+        .title,
+        .sub-title {
+            width: 600px;
+        }
+    }
+}
+
+.hero-image {
+    width: 680px;
+    height: 460px;
+    position: absolute;
+    right: 130px;
+
+    .skateboarder-img {
+        position: absolute;
+        object-fit: cover;
+        right: -1px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    strong {
+        position: absolute;
+        right: 16px;
+        text-align: right;
+        font-size: 1.4rem;
+        color: var(--black);
+
+        p {
+            color: var(--white);
+        }
+    }
+
+    &.men-image {
+        background-color: #d4f5ff;
 
         strong {
-            position: absolute;
-            right: 16px;
             bottom: 18px;
-            text-align: right;
-            font-size: 1.4rem;
-            color: var(--black);
+        }
+    }
 
-            p {
-                color: var(--white);
-            }
+    &.women-image {
+        background-color: #e8f1ff;
+
+        strong {
+            top: 18px;
         }
     }
 }

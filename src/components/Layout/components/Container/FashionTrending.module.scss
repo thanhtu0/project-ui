@@ -3,25 +3,7 @@
     margin: 120px 130px;
     width: 1180px;
     height: 654px;
-
-    .title-content {
-        width: 350px;
-        font-size: 4rem;
-        font-weight: 600;
-        color: var(--black);
-        position: relative;
-
-        &::after {
-            content: '';
-            position: absolute;
-            margin-left: 16px;
-            top: 90%;
-            transform: translateY(-10%);
-            width: 60px;
-            height: 2px;
-            border-top: 1px solid var(--black);
-        }
-    }
+    background-color: lightgrey;
 
     .img-hoodie {
         position: absolute;

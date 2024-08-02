@@ -4,6 +4,7 @@ import classNames from 'classnames/bind';
 import styles from './NewRelease.module.scss';
 
 import { AiOutlineHeart, AiFillHeart } from 'react-icons/ai';
+import TitleContent from '~/components/TitleContent';
 
 const cx = classNames.bind(styles);
 
@@ -114,7 +115,7 @@ const NewRelease = () => {
 
     return (
         <div className={cx('container')}>
-            <h2 className={cx('title')}>New Releases</h2>
+            <TitleContent title="New Releases" />
             <div className={cx('products')}>
                 {products.map((product) => (
                     <Product key={product.id} product={product} onLikeToggle={handleLikeToggle} />

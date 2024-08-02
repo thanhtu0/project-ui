@@ -6,7 +6,7 @@ import Footer from '../components/Footer';
 
 const cx = classNames.bind(styles);
 
-const DefaultLayout = ({ children }) => {
+const HeaderFooterOnly = ({ children }) => {
     return (
         <div className={cx('wrapper')}>
             <Header />
@@ -18,4 +18,4 @@ const DefaultLayout = ({ children }) => {
     );
 };
 
-export default DefaultLayout;
+export default HeaderFooterOnly;

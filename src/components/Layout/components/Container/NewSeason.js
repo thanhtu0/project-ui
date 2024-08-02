@@ -2,13 +2,14 @@ import classNames from 'classnames/bind';
 import styles from './NewSeason.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAngleLeft, faAngleRight } from '@fortawesome/free-solid-svg-icons';
+import TitleContent from '~/components/TitleContent';
 
 const cx = classNames.bind(styles);
 
 const NewSeason = () => {
     return (
         <div className={cx('wrapper')}>
-            <p>New Season - Converse 'White Widow' Pack</p>
+            <TitleContent title="New Season - Converse 'White Widow' Pack" />
             <div className={cx('season-content')}>
                 <div className={cx('left-season')}>
                     <img src="/assets/images/men/container/new_Season/shoes.png" alt="" />
