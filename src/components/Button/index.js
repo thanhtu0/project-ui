@@ -6,6 +6,7 @@ const cx = classNames.bind(styles);
 function Button({
     primary = false,
     rounded = false,
+    outline = false,
     disabled = false,
     small = false,
     large = false,
@@ -20,7 +21,6 @@ function Button({
         ...passProps,
     };
 
-    // Remove event listerner when btn is disabled
     if (disabled) {
         Object.keys(props).forEach((key) => {
             if (key.startsWith('on') && typeof props[key] === 'function') {
@@ -33,6 +33,7 @@ function Button({
         [className]: className,
         primary,
         rounded,
+        outline,
         disabled,
     });
 

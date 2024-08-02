@@ -1,4 +1,5 @@
 .wrapper {
+    font-family: var(--font-text);
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -19,13 +20,20 @@
     }
 }
 
+.primary {
+    color: var(--white);
+    background-color: var(--black);
+}
+
 .rounded {
     font-weight: 600;
     background-color: transparent;
     border: none;
 }
 
-.primary {
-    color: var(--white);
-    background-color: var(--black);
+.outline {
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 1.4rem;
+    border: none;
 }
