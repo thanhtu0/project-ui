@@ -30,7 +30,7 @@
                     cursor: pointer;
 
                     &.first-line {
-                        background-color: #9a9a9a;
+                        background-color: var(--gray);
                     }
 
                     &.second-line,
@@ -92,13 +92,13 @@
                     cursor: pointer;
 
                     &:hover {
-                        border: 0.5px solid #9a9a9a;
+                        border: 0.5px solid var(--gray);
                         box-shadow: 5px;
                     }
 
                     .icon {
                         font-size: 2rem;
-                        color: #9a9a9a;
+                        color: var(--gray);
                     }
                 }
 

@@ -83,7 +83,7 @@
     font-size: 0.8rem;
     color: var(--black);
     background-color: var(--white);
-    border-color: #9a9a9a;
+    border-color: var(--gray);
 
     &:hover {
         color: var(--white);
@@ -102,6 +102,6 @@
     border-color: var(--black);
 
     &:hover {
-        background-color: #9a9a9a;
+        background-color: var(--gray);
     }
 }

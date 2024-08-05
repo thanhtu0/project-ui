@@ -47,7 +47,7 @@
                 text-decoration: none;
 
                 &:hover {
-                    color: #bbbbbb;
+                    color: var(--gray);
                 }
             }
         }
@@ -64,7 +64,7 @@
 .footer-bottom {
     height: 55px;
     margin-top: 73px;
-    border-top: 1px solid #9a9a9a;
+    border-top: 1px solid var(--gray);
 
     p {
         font-size: 1.2rem;
@@ -100,7 +100,7 @@
 }
 
 .social-icons li a {
-    font-size: 16px;
+    font-size: 1.6rem;
     transition: color 0.3s ease;
 
     &.facebook:hover {
@@ -137,7 +137,7 @@
         width: 45%;
 
         li a {
-            font-size: 14px;
+            font-size: 1.4rem;
             font-weight: 400;
             line-height: 18px;
         }

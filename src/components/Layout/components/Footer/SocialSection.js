@@ -1,39 +1,37 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faGithub, faInstagram, faSnapchat, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import {
+    faFacebook,
+    faGithub,
+    faInstagram,
+    faLinkedin,
+    faSnapchat,
+    faTwitter,
+} from '@fortawesome/free-brands-svg-icons';
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
 
 const cx = classNames.bind(styles);
 
+const socialLinks = [
+    { href: 'https://www.facebook.com/ThanhTu03012002', icon: faFacebook, className: 'facebook' },
+    { href: 'https://www.instagram.com/', icon: faInstagram, className: 'instagram' },
+    { href: 'https://github.com/thanhtu0', icon: faGithub, className: 'github' },
+    { href: 'https://x.com/home', icon: faTwitter, className: 'twitter' },
+    { href: 'https://www.snapchat.com/', icon: faSnapchat, className: 'snapchat' },
+    { href: 'https://www.snapchat.com/', icon: faLinkedin, className: 'linkedin' },
+];
+
 const SocialSection = () => (
     <div className={cx('footer-section')}>
         <h3>Social app</h3>
         <ul className={cx('social-icons')}>
-            <li>
-                <a href="https://www.facebook.com/ThanhTu03012002" className={cx('facebook')}>
-                    <FontAwesomeIcon icon={faFacebook} />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.instagram.com/" className={cx('instagram')}>
-                    <FontAwesomeIcon icon={faInstagram} />
-                </a>
-            </li>
-            <li>
-                <a href="https://github.com/thanhtu0" className={cx('github')}>
-                    <FontAwesomeIcon icon={faGithub} />
-                </a>
-            </li>
-            <li>
-                <a href="https://x.com/home" className={cx('twitter')}>
-                    <FontAwesomeIcon icon={faTwitter} />
-                </a>
-            </li>
-            <li>
-                <a href="https://www.snapchat.com/" className={cx('snapchat')}>
-                    <FontAwesomeIcon icon={faSnapchat} />
-                </a>
-            </li>
+            {socialLinks.map(({ href, icon, className }) => (
+                <li key={className}>
+                    <a href={href} className={cx(className)} target="_blank" rel="noopener noreferrer">
+                        <FontAwesomeIcon icon={icon} />
+                    </a>
+                </li>
+            ))}
         </ul>
     </div>
 );

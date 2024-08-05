@@ -13,13 +13,13 @@ const Season = () => {
                 <p className={cx('new-season')}>New Season</p>
                 <p className={cx('title')}>Welcome</p>
                 <p className={cx('sub-title')}>Hoddies</p>
-                <Button outline>Discover</Button>
+                <Button fill>Discover</Button>
             </div>
             <div className={cx('section', 'top-right')}>
                 <p className={cx('latest')}>Latest</p>
                 <p className={cx('title')}>Santa</p>
                 <p className={cx('sub-title')}>Cruz</p>
-                <Button outline>Discover</Button>
+                <Button fill>Discover</Button>
             </div>
             <div className={cx('section', 'bottom-left')}>
                 <div className={cx('play-button')}>
