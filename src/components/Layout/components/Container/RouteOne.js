@@ -23,7 +23,7 @@ const RouteOne = () => {
                     Route One O.B. is our in-house brand; helping our favourite finds to become your most loved wardrobe
                     staples.
                 </p>
-                <Button primary>Discover</Button>
+                <Button fill>Discover</Button>
             </div>
             {images.map((image, index) => (
                 <img

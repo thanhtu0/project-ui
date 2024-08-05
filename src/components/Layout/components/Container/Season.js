@@ -34,7 +34,7 @@ const Season = () => {
                     to, it was only seven months ago! Well, he's back again (sans Cobra Man sadly) and this time the
                     "gimmick" is it's all filmed...
                 </p>
-                <Button primary>Discover</Button>
+                <Button fill>Discover</Button>
             </div>
         </div>
     );

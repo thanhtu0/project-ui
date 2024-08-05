@@ -1,0 +1,28 @@
+// Search.scss
+.search-bar {
+    display: flex;
+    height: 38px;
+
+    input {
+        flex: 1;
+        height: 100%;
+        padding: 10px 0 10px 16px;
+        border: 1px solid #9a9a9a;
+        box-sizing: border-box;
+
+        &::placeholder {
+            font-size: 1.4rem;
+            color: #9a9a9a;
+        }
+    }
+
+    .search-btn {
+        font-family: var(--font-text);
+        width: 125px;
+        line-height: 17.5px;
+        font-size: 1.4rem;
+        color: var(--white);
+        background-color: var(--black);
+        cursor: pointer;
+    }
+}

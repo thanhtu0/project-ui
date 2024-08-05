@@ -20,11 +20,8 @@ const Banner = ({ activeTab }) => {
                 <h1 className={cx('title')}>{activeTab === 'Men' ? 'Route One O.B.' : 'Elegance Redefined'}</h1>
                 <h2 className={cx('sub-title')}>{activeTab === 'Men' ? 'Lastest Skateboard' : 'Latest Fashion'}</h2>
                 <div className={cx('hero-btn')}>
-                    <Button primary>Discover</Button>
-                    <Button rounded>
-                        <span className={cx('video-icon')}>
-                            <FontAwesomeIcon icon={faCirclePlay} />
-                        </span>{' '}
+                    <Button fill>Discover</Button>
+                    <Button rounded leftIcon={<FontAwesomeIcon icon={faCirclePlay} />}>
                         Watch Video
                     </Button>
                 </div>

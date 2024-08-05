@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Subscribe.module.scss';
+import Search from '~/components/Search';
 
 const cx = classNames.bind(styles);
 
@@ -10,12 +11,13 @@ const Subscribe = () => {
                 <p className={cx('subscription__text')}>Stay in touch</p>
                 <h2 className={cx('subscription__title')}>Subscribe</h2>
             </div>
-            <form className={cx('subscription__form')}>
-                <input type="email" className={cx('subscription__input')} placeholder="Enter your email here" />
-                <button type="submit" className={cx('subscription__button')}>
-                    Subscribe
-                </button>
-            </form>
+            <Search
+                width="480px"
+                buttonWidth="125px"
+                placeholder="Enter your email here..."
+                withIcon={false}
+                buttonText="Subscribe"
+            />
         </div>
     );
 };

@@ -25,7 +25,7 @@ const FashionTrending = () => {
                     alt="be Driven"
                 />
                 <p>Drive or be Driven, the new trending from Bobaj and Jackson Davies...</p>
-                <Button primary>Shop Now</Button>
+                <Button fill>Shop Now</Button>
                 <div className={cx('img-shoes')}>
                     <img src="/assets/images/men/container/fashion_trending/shoes.png" alt="Shoes" />
                 </div>

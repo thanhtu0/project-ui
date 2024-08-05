@@ -2,19 +2,19 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import classNames from 'classnames/bind';
 import styles from './Header.module.scss';
+import { IoIosStar } from 'react-icons/io';
 import {
     faCartFlatbed,
     faChevronDown,
     faHeart,
     faLocationDot,
     faPhoneVolume,
-    faSearch,
-    faStar,
     faUser,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import MenuBar from '../MenuItem';
+import Search from '~/components/Search';
 
 const cx = classNames.bind(styles);
 
@@ -59,7 +59,7 @@ const Header = ({ setActiveTab }) => {
 
                 <div className={cx('right-info')}>
                     {Array.from({ length: 5 }, (_, index) => (
-                        <FontAwesomeIcon className={cx('icon')} key={index} icon={faStar} />
+                        <IoIosStar className={cx('icon')} key={index} />
                     ))}
                     <p>33400 Five Star Service Reviews</p>
                 </div>
@@ -82,13 +82,13 @@ const Header = ({ setActiveTab }) => {
                     </ul>
                 </nav>
 
-                <div className={cx('search-bar')}>
-                    <input type="text" placeholder="Search product" />
-                    <button className={cx('search-btn')}>
-                        <FontAwesomeIcon className={cx('search-icon')} icon={faSearch} />
-                        <span className={cx('search-text')}>Search</span>
-                    </button>
-                </div>
+                <Search
+                    width="380px"
+                    buttonWidth="100px"
+                    placeholder="Search product"
+                    showIcon={true}
+                    buttonText="Search"
+                />
 
                 <div className={cx('account')}>
                     <div className={cx('account-icon')}>
