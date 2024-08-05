@@ -10,6 +10,7 @@
     cursor: pointer;
     border: 1px solid transparent;
     user-select: none;
+    font-family: var(--font-text);
 
     + .wrapper {
         margin-left: 80px;
@@ -24,12 +25,6 @@
 .icon {
     font-size: 2.8rem;
 }
-
-// Remove these lines as they are now controlled by inline styles
-// .icon + .title,
-// .title + .icon {
-//     margin-left: 16px;
-// }
 
 // Fill, Outline, playVideo Button
 .rounded {
