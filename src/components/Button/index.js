@@ -9,6 +9,7 @@ function Button({
     href,
     fill = false,
     outline = false,
+    reverse = false,
     text = false,
     rounded = false,
     disabled = false,
@@ -58,6 +59,7 @@ function Button({
         plus,
         minus,
         size,
+        reverse,
     });
 
     return (
