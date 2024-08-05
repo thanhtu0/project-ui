@@ -26,7 +26,7 @@ function App() {
                                 path={route.path}
                                 element={
                                     <Layout activeTab={activeTab} setActiveTab={setActiveTab}>
-                                        <Page />
+                                        <Page activeTab={activeTab} />
                                     </Layout>
                                 }
                             />

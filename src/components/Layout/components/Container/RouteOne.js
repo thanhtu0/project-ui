@@ -20,7 +20,7 @@ const RouteOne = () => {
                 <p className={cx('title')}>Route One O.B.</p>
                 <p className={cx('sub-title')}>Latest Graphics</p>
                 <p className={cx('description')}>
-                    Route One O.B. is our in-house brand; helping our favourite finds to become your most loved wardrobe
+                    Route One O.B. is our in-house brand; helping our favorite finds to become your most loved wardrobe
                     staples.
                 </p>
                 <Button fill>Discover</Button>

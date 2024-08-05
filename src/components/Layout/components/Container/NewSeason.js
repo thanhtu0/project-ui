@@ -6,13 +6,33 @@ import TitleContent from '~/components/TitleContent';
 
 const cx = classNames.bind(styles);
 
-const NewSeason = () => {
+const NewSeason = ({ activeTab }) => {
+    const content =
+        activeTab === 'Men'
+            ? {
+                  title: "New Season - Converse 'White Widow' Pack",
+                  images: {
+                      main: '/assets/images/men/container/new_Season/shoes.png',
+                      card: '/assets/images/men/container/new_season/shoes_cart.png',
+                  },
+                  description: 'CTAS Pro Hi Skate Shoes',
+                  price: '£64.99',
+              }
+            : {
+                  title: 'New Season - Nike Air Max Pack',
+                  images: {
+                      main: '/assets/images/women/container/new_Season/clothes.png',
+                      card: '/assets/images/women/container/new_season/clothes_cart.png',
+                  },
+                  description: 'Womens Russett Pullover Hoodie',
+                  price: '£79.99',
+              };
     return (
         <div className={cx('wrapper')}>
-            <TitleContent title="New Season - Converse 'White Widow' Pack" />
+            <TitleContent title={content.title} />
             <div className={cx('season-content')}>
                 <div className={cx('left-season')}>
-                    <img src="/assets/images/men/container/new_Season/shoes.png" alt="" />
+                    <img src={content.images.main} alt="" />
                 </div>
                 <div className={cx('right-season')}>
                     <div className={cx('season-slide')}>
@@ -23,14 +43,14 @@ const NewSeason = () => {
 
                     <div className={cx('season-card')}>
                         <div className={cx('season-img')}>
-                            <img src="/assets/images/men/container/new_season/shoes_cart.png" alt="" />
+                            <img src={content.images.card} alt="" />
                         </div>
                         <div className={cx('season-info')}>
                             <span>
-                                <b>Converse </b>
-                                CTAS Pro Hi Skate Shoes
+                                <b>{activeTab === 'Men' ? 'Converse' : 'Obey'} </b>
+                                {content.description}
                             </span>
-                            <strong>£64,99</strong>
+                            <strong>{content.price}</strong>
                         </div>
                     </div>
                     <div className={cx('arrow-btn')}>

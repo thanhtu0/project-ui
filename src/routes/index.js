@@ -1,15 +1,14 @@
 // Layouts
 import { HeaderFooterOnly } from '~/components/Layout';
 
-import MenHome from '~/pages/MenHome';
-import WomenHome from '~/pages/WomenHome';
+import Home from '~/pages/Home';
 import ProductDetail from '~/pages/ProductDetail';
 
 // Public routes
 const publicRoutes = [
-    { path: '/', component: MenHome },
-    { path: '/men', component: MenHome },
-    { path: '/women', component: WomenHome },
+    { path: '/', component: Home },
+    { path: '/men', component: Home },
+    { path: '/women', component: Home },
     { path: '/product-detail', component: ProductDetail, layout: HeaderFooterOnly },
 ];
 // Private routes
