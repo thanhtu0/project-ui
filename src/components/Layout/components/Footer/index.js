@@ -1,5 +1,6 @@
 import classNames from 'classnames/bind';
 import styles from './Footer.module.scss';
+import { Link } from 'react-router-dom';
 
 import AboutSection from './AboutSection';
 import StoreSection from './StoreSection';
@@ -11,9 +12,9 @@ const cx = classNames.bind(styles);
 const Footer = () => {
     return (
         <footer className={cx('footer')}>
-            <div className={cx('footer-logo')}>
+            <Link to="/" className={cx('footer-logo')}>
                 <h2>cordes.</h2>
-            </div>
+            </Link>
             <div className={cx('footer-container')}>
                 <AboutSection />
                 <StoreSection />

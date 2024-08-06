@@ -60,11 +60,14 @@ const NewRelease = () => {
                         </div>
                         <img src={product.imgSrc} alt={product.name} />
                         <div className={cx('product-info')}>
-                            <Link
+                            {/* <Link
                                 to={`/product-detail/${product.id}`}
                                 className={cx('product-name')}
                                 title={product.title}
                             >
+                                {product.name}
+                            </Link> */}
+                            <Link to="/product-detail" className={cx('product-name')} title={product.title}>
                                 {product.name}
                             </Link>
                             <p>

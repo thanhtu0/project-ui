@@ -66,7 +66,9 @@ const Header = ({ setActiveTab }) => {
             </div>
 
             <div className={cx('navigation')}>
-                <div className={cx('logo')}>cordes.</div>
+                <Link to="/men" className={cx('logo')}>
+                    cordes.
+                </Link>
 
                 <nav className={cx('nav')}>
                     <ul>

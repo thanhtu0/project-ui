@@ -166,7 +166,10 @@ const Product = memo(({ product, onLikeToggle }) => (
         </div>
         <img src={product.image} alt={product.name} className={cx('product-image')} />
         <div className={cx('product-info')}>
-            <Link to={`/product-detail/${product.id}`} className={cx('product-name')} title={product.title}>
+            {/* <Link to={`/product-detail/${product.id}`} className={cx('product-name')} title={product.title}>
+                {product.name}
+            </Link> */}
+            <Link to="/product-detail" className={cx('product-name')} title={product.title}>
                 {product.name}
             </Link>
             <div className={cx('product-sale')}>
