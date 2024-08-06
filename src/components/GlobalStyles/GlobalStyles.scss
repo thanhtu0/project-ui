@@ -42,3 +42,20 @@ a {
     color: var(--black);
     text-decoration: none;
 }
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-space-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@mixin flex-justify-space-between {
+    display: flex;
+    justify-content: space-between;
+}

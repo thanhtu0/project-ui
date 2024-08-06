@@ -1,11 +1,11 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
 .wrapper {
     margin: 180px 0;
     position: relative;
     width: var(--default-layout-width);
     height: 560px;
     background-color: #dce6ff;
-    display: flex;
-    justify-content: space-between;
+    @include flex-justify-space-between;
     padding: 0 130px;
 
     .content {

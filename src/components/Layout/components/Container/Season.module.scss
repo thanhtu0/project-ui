@@ -1,3 +1,5 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     margin: 180px 130px;
     width: 1180px;
@@ -105,18 +107,14 @@
     &.bottom-left {
         background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0)),
             url('../../../../../public/assets/images/men/container/season/season_3.png');
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-center;
 
         .play-button {
             width: 99px;
             height: 100px;
             border: 5px solid rgba(255, 255, 255, 0.8);
             border-radius: 50%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-center;
             cursor: pointer;
 
             .icon {

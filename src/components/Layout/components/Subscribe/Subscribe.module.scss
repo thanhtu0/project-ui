@@ -1,9 +1,8 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
 .subscription {
     width: var(--default-layout-width);
     height: 236px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-space-between;
     padding: 0 330px;
 
     &__content {

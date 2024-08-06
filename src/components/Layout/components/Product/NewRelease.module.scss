@@ -1,3 +1,5 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
+
 .wrapper {
     margin-top: 180px;
     height: 535px;
@@ -50,8 +52,7 @@
                     line-height: 19px;
                     text-align: right;
                     max-height: 20px;
-                    display: flex;
-                    justify-content: space-between;
+                    @include flex-justify-space-between;
 
                     b {
                         font-size: 1.7rem;

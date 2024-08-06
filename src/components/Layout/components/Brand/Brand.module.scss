@@ -1,19 +1,16 @@
+@import '../../../GlobalStyles/GlobalStyles.scss';
 .wrapper {
     width: var(--default-layout-width);
     height: 147px;
     background-color: var(--white);
-    display: flex;
     padding: 0 130px;
-    justify-content: space-between;
-    align-items: center;
+    @include flex-space-between;
 
     .brand-logo {
         width: 945px;
         height: 67px;
         display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
+        @include flex-space-between;
 
         &::after {
             content: '';
