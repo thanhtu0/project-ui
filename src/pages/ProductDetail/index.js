@@ -1,10 +1,10 @@
-import Button from '~/components/Button';
-import Product from '~/components/Layout/components/Product/Product';
+import { Product, NewRelease } from '~/components/Layout/components/Product';
 
 const ProductDetail = () => {
     return (
         <div>
             <Product />
+            <NewRelease />
         </div>
     );
 };

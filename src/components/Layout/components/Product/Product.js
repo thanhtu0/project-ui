@@ -9,12 +9,6 @@ import Button from '~/components/Button';
 const cx = classNames.bind(styles);
 
 const Product = () => {
-    const [selectedSize, setSelectedSize] = useState(null);
-
-    const handleSizeClick = (size) => {
-        setSelectedSize(size);
-    };
-
     return (
         <div className={cx('wrapper')}>
             <div className={cx('image-product')}>
@@ -38,16 +32,16 @@ const Product = () => {
                     <span>Size</span>
                     <div className={cx('sizes')}>
                         <Button size>7</Button>
-                        <Button size style={{ marginLeft: '10px' }}>
+                        <Button size style={{ marginLeft: '16px' }}>
                             8
                         </Button>
-                        <Button size style={{ marginLeft: '10px' }}>
+                        <Button size style={{ marginLeft: '16px' }}>
                             9
                         </Button>
-                        <Button size disabled style={{ marginLeft: '10px' }}>
+                        <Button size disabled style={{ marginLeft: '16px' }}>
                             10
                         </Button>
-                        <Button size disabled style={{ marginLeft: '10px' }}>
+                        <Button size disabled style={{ marginLeft: '16px' }}>
                             11
                         </Button>
                     </div>
