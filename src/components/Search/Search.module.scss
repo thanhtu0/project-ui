@@ -11,7 +11,6 @@
         box-sizing: border-box;
 
         &::placeholder {
-            font-size: 1.4rem;
             color: var(--gray);
         }
     }
@@ -20,7 +19,6 @@
         font-family: var(--font-text);
         width: 125px;
         line-height: 17.5px;
-        font-size: 1.4rem;
         color: var(--white);
         background-color: var(--black);
         cursor: pointer;

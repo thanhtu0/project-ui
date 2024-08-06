@@ -28,7 +28,7 @@
         margin-top: 20px;
         font-size: 2.8rem;
         line-height: 35px;
-        font-weight: 400;
+        font-weight: var(--font-normal);
     }
 }
 
@@ -36,17 +36,12 @@
     margin-top: 40px;
     width: 91px;
     font-size: 2.8rem;
-    font-weight: 600;
+    font-weight: var(--font-bold);
     line-height: 35px;
 }
 
 .size-selector {
     margin-top: 80px;
-
-    span {
-        font-size: 1.4rem;
-        font-weight: 400;
-    }
 
     .sizes {
         margin-top: 16px;
@@ -89,7 +84,7 @@
 
     h3 {
         font-size: 1.6rem;
-        font-weight: 600;
+        font-weight: var(--font-bold);
         line-height: 20px;
     }
 }

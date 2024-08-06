@@ -21,7 +21,6 @@
         padding: 80px 100px;
 
         .new-season {
-            font-size: 1.4rem;
             color: var(--white);
             position: relative;
 
@@ -43,7 +42,7 @@
             max-width: 236px;
             margin-top: 8px;
             font-size: 5.2rem;
-            font-weight: 600;
+            font-weight: var(--font-bold);
             line-height: 65px;
             color: var(--white);
         }
@@ -66,7 +65,6 @@
         padding: 80px 100px;
 
         .latest {
-            font-size: 1.4rem;
             color: var(--white);
             position: relative;
 
@@ -88,7 +86,7 @@
             width: 153px;
             margin-top: 8px;
             font-size: 5.2rem;
-            font-weight: 600;
+            font-weight: var(--font-bold);
             line-height: 65px;
             color: var(--white);
         }
@@ -135,13 +133,12 @@
         .title,
         .sub-title {
             font-size: 5.2rem;
-            font-weight: 600;
+            font-weight: var(--font-bold);
             line-height: 65px;
         }
 
         .description {
             text-align: justify;
-            font-size: 1.4rem;
             margin-top: 24px;
         }
 

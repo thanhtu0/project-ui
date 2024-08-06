@@ -4,8 +4,8 @@
     justify-content: center;
     height: 38px;
     padding: 10px 32px;
+    font-weight: var(--font-normal);
     font-size: 1.4rem;
-    font-weight: 400;
     text-align: center;
     cursor: pointer;
     border: 1px solid transparent;
@@ -29,7 +29,7 @@
 // Fill, Outline, playVideo Button
 .rounded {
     border-radius: 999px;
-    font-weight: 600;
+    font-weight: var(--font-bold);
     min-width: 130px;
     padding: 5px 0;
     height: 26px;

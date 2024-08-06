@@ -3,12 +3,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Germania+One&family=Lexend:wght@100..900&family=Montserrat:wght@100..900&display=swap');
 
 :root {
+    // Font-family
     --font-logo: 'Germania One', system-ui;
     --font-text: 'Lexend', sans-serif;
+
+    // Font-color
     --black: #1a1a1a;
     --white: #ffffff;
     --gray: #9a9a9a;
 
+    // Fon-weight
+    --font-bold: 600;
+    --font-normal: 400;
     // Default layout
     --default-layout-width: 1440px;
 }
@@ -25,8 +31,7 @@ html {
 
 body {
     font-family: var(--font-text);
-    font-size: 1.6rem; // 16px
-    font-weight: 400;
+    font-size: 1.4rem; // 16px
     line-height: 17.5px;
     text-rendering: optimizeSpeed;
     color: var(--black);

@@ -18,7 +18,6 @@
 .breadcrumb-item {
     display: flex;
     align-items: center;
-    font-size: 1.4rem;
     position: relative;
     transition: font-size 0.3s ease;
 
@@ -61,5 +60,4 @@
 
 .breadcrumb-item.active {
     color: #171717;
-    font-weight: 400;
 }
